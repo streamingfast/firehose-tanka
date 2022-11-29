@@ -4,8 +4,8 @@
     {
       "source": {
         "git": {
-          "remote": "https://github.com/grafana/jsonnet-libs.git",
-          "subdir": "ksonnet-util"
+          "remote": "https://github.com/streamingfast/sf-tanka.git",
+          "subdir": "sf"
         }
       },
       "version": "master"
