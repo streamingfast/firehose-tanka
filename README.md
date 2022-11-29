@@ -17,19 +17,21 @@ This repository contains Tanka recipes to deploy Firehose to a Kubernetes cluste
 1. In this folder, create a file named `jsonnetfile.json` with the following content:
 
     ```
+    cat <<- "EOD" > jsonnetfile.json
     {
-    "version": 1,
-    "dependencies": [
+      "version": 1,
+      "dependencies": [
         {
-        "source": {
+          "source": {
             "git": {
-            "remote": "https://github.com/streamingfast/firehose-tanka.git",
+              "remote": "https://github.com/streamingfast/firehose-tanka.git"
             }
-        },
-        "version": "master"
+          },
+          "version": "master"
         }
-    ]
+      ]
     }
+    EOD
     ```
 
 1. Install the Jsonnet dependencies:
